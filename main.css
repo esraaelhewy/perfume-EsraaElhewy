@@ -40,7 +40,7 @@ section{
     background-color: var(--White);
     width:300px;
     padding:20px;
-    border-radius: 8px;
+    border-radius:0px 8px 8px 0px;
 }
 section h1{
     font-size: 32px;
