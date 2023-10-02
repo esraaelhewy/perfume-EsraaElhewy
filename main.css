@@ -90,7 +90,7 @@ button:hover{
         margin:0px auto;
     }
     section{
-        border-radius: 0px 0px 8px 8px;
+        border-radius: 0px 8px 8px 0px;
         width:100%;
         padding:20px;
         border-radius: 9px;
