@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    /* -------primary-------- */
+    --darksyan:hsl(158, 36%, 37%);
+    --cream:hsl(30, 38%, 92%);
+    /* ---------secondary------ */
+    --verydarkblue: hsl(212, 21%, 14%);
+    --darkgrayishblue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    background-color: var(--cream);
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    margin-left:300px;
+    margin-top:50px;
+}
+body p{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color:var(--darkgrayishblue);
+    line-height: 28px;
+}
+
+main img{
+    display: block;
+    width:350px;
+    border-radius: 8px 0px 0px 8px;
+    margin:0 auto;
+}
+h1,h2{
+    font-family: 'Fraunces', serif;
+}
+section{
+    background-color: var(--White);
+    width:300px;
+    padding:20px;
+    border-radius: 8px;
+}
+section h1{
+    font-size: 32px;
+}
+section >:first-child {
+    letter-spacing: 9px;
+    text-transform: uppercase;
+}
+.price{
+    display:flex;
+    flex-direction: row;
+    text-align: left;
+}
+.price h2{
+    color:var(--darksyan);
+    font-size: 32px;
+}
+.price p{
+    margin-left:40px;
+    margin-top:30px;
+}
+button{
+    border-radius: 5px;
+    background-color: var(--darksyan);
+    color:var(--White);
+    border:none;
+    width:100%;
+    margin:10px 10px;
+    padding:10px;
+    
+}
+button:hover{
+    background-color: var(--verydarkblue);
+}
+
+@media (max-width:800px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width:80%;
+        margin:0px auto;
+    }
+    main img{
+        width:100%;
+        display: block;
+        border-radius: 9px 9px 0px 0px;
+        margin:0px auto;
+    }
+    section{
+        border-radius: 0px 0px 8px 8px;
+        width:100%;
+        padding:20px;
+        border-radius: 9px;
+    }
+    button{
+        border-radius: 7px;
+        width:80%;
+        margin:10px auto;
+        padding:20px;
+    }
+
+}
+.attribution{
+    text-align: center;
+    margin-top:20px;
+}
+.attribution a , span{
+    text-decoration: none;
+    color:var(--verydarkblue);
+}
